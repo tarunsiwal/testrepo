@@ -8,8 +8,8 @@ import {
 import auth from "../middleware/auth.js";
 const router = express.Router();
 
-router.get("/", auth, getUser);
-router.get("/:id", auth, getUserByID);
+router.get("/", getUser);
+router.get("/:id", getUserByID);
 router.put("/:id", auth, updateUser);
 router.delete("/:id", auth, deleteUser);
 
